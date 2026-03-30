@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages Test</title>
+  <title>Test Page</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      background: linear-gradient(135deg, #0E203F, #1e3a8a);
-      color: white;
+      margin: 0;
       height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-    }
-
-    .container {
+      align-items: center;
+      background: linear-gradient(135deg, #0E203F, #1e3a8a);
+      color: white;
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
     }
+  </style>
+</head>
+<body>
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
+  <div>
+    <h1>🚀 Site is LIVE</h1>
+    <p>If you see this, everything is working perfectly.</p>
+    <p id="domain"></p>
+  </div>
 
-    p {
-      font-size: 1.
+  <script>
+    document.getElementById("domain").innerText =
+      "Domain: " + window.location.hostname;
+  </script>
+
+</body>
+</html>
